@@ -9,19 +9,19 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
-    """Displays 'Hello HBNB!'"""
+    """Display 'Hello HBNB!'"""
     return 'Hello HBNB!'
 
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """Displays 'HBNB'"""
+    """Display 'HBNB'"""
     return 'HBNB'
 
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_text(text):
-    """Displays 'C ' followed by the value of the text variable"""
+    """Display 'C ' followed by the value of the text variable"""
     return 'C ' + text.replace('_', ' ')
 
 
